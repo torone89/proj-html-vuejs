@@ -1,5 +1,8 @@
 <template>
-  <div class="text-danger">prova</div>
+  <div class="text-danger">
+    prova
+    <i class="fa-solid fa-star"></i>
+  </div>
 </template>
 
 <script>
