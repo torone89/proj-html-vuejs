@@ -1,6 +1,23 @@
 <template>
   <header>
     <div class="container">
+      <!-- Navbar -->
+      <nav class="navbar navbar-dark pt-3">
+        <div class="container-fluid">
+          <img
+            src="../../public/images/avadabarbers-logo-x1.png"
+            alt="Logo"
+            class="pointer p-0"
+          />
+          <div class="d-flex align-items-center">
+            <a href="#main-2"><i class="fas fa-shopping-cart"></i></a>
+            <button class="navbar-toggler border-0" type="button">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <!-- /Top bar -->
       <!-- JUMBOTRON -->
 
       <div id="jumbotron">
@@ -55,6 +72,7 @@
 <script>
 export default {
   name: "BaseHeader",
+  props: {},
 };
 </script>
 
@@ -77,7 +95,7 @@ header {
       opacity: 0.8;
     }
   }
-  // BUTONI FIXED
+  // BUTTON FIXED
 
   #buttons-fix {
     position: fixed;
@@ -107,6 +125,6 @@ header {
       }
     }
   }
-  // --Top right fixed buttons
 }
 </style>
+
