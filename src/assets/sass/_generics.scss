@@ -1,0 +1,28 @@
+// General
+
+.text-title {
+    font-family: 'Montserrat', sans-serif;
+    color: $gunbsmoke;
+}
+
+
+
+// ******  BTN ********
+.btn-general {
+    padding: 10px 40px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: transparent;
+}
+
+.goldenrod_btn {
+    border: 2px solid $goldenrod;
+    color: $goldenrod;
+    opacity: 0.7;
+
+    &:hover {
+        border: 2px solid $pizazz;
+        color: $pizazz;
+    }
+}
