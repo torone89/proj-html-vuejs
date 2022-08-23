@@ -15,6 +15,9 @@ import BaseHeader from "./components/BaseHeader.vue";
 import TheMain from "./components/TheMain.vue";
 import BaseFooter from "./components/BaseFooter.vue";
 
+// Import Sass
+import "./assets/sass/style.scss";
+
 export default {
   name: "App",
   components: {
