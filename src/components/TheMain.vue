@@ -165,7 +165,7 @@
         <h6 class="mt-5 fw-bold">What people say</h6>
         <h2 class="mb-5 fw-bold">Reviews</h2>
         <div class="row justify-content-around">
-          <div class="col-3">
+          <div class="col-3 round-photo">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
               mollis eleifend ante ut sagittis. Sed sodales, urna et imperdiet
@@ -177,7 +177,7 @@
             />
             <h6 class="text-capitalize fw-bold fst-italic">John Doe</h6>
           </div>
-          <div class="col-3">
+          <div class="col-3 round-photo">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
               mollis eleifend ante ut sagittis. Sed sodales, urna et imperdiet
@@ -189,7 +189,7 @@
             />
             <h6 class="text-capitalize fw-bold fst-italic">Pete Jones</h6>
           </div>
-          <div class="col-3">
+          <div class="col-3 round-photo">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
               mollis eleifend ante ut sagittis. Sed sodales, urna et imperdiet
@@ -204,6 +204,59 @@
         </div>
       </div>
     </section>
+    <!-- Blog posts -->
+    <section id="blog" class="text-center pb-5">
+      <div class="triangle-transiction"></div>
+      <h6 class="mt-5 fw-bold">Tales from the barbershop</h6>
+      <h2 class="mb-5 fw-bold">Recent Blog Posts</h2>
+      <div class="container">
+        <ul class="row justify-content-around">
+          <li class="col-3">
+            <img
+              src="../../public/images/avadabarbers-second-blog-320x202.jpg"
+              alt="second blog"
+            />
+            <div>
+              <h4 class="mt-4 fw-bold">Avada Barbers Now Open</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus ut dapibus magna. Praesent semper,
+              </p>
+            </div>
+          </li>
+          <li class="col-3">
+            <img
+              src="../../public/images/avadabarbers-choosing-blog-320x202.jpg"
+              alt="Choosing Blog"
+            />
+            <div>
+              <h4 class="mt-4 fw-bold">Choosing The Right Barber</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus ut dapibus magna. Praesent semper,
+              </p>
+            </div>
+          </li>
+          <li class="col-3">
+            <img
+              src="../../public/images/avadabarbers-ourservice-blog-320x202.jpg"
+              alt="ourservices"
+            />
+            <div>
+              <h4 class="mt-4 fw-bold">Quick Service Guide</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus ut dapibus magna. Praesent semper,
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <button class="mb-5 goldenrod_btn btn-general">
+        Read more from our blog
+      </button>
+    </section>
+    <!-- Blog posts -->
   </main>
   <!-- CLOSE MAIN -->
 </template>
@@ -223,6 +276,8 @@ export default {
 h2 {
   font-size: 80px;
   color: $starWhite;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 h4 {
@@ -234,6 +289,8 @@ h6 {
   color: $driftWood;
   font-size: 14px;
   letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 p {
@@ -306,13 +363,22 @@ p {
     color: $silverChalice;
   }
   .row {
-    .col-3 {
+    .round-photo {
       img {
         border-radius: 50%;
         height: 120px;
         width: 120px;
         margin: 15px 0;
       }
+    }
+  }
+  // SECTION BLOG
+
+  #blog {
+    background: $ebb;
+    .triangle-transiction {
+      background-image: linear-gradient(to top right, transparent 50%, $white 0),
+        linear-gradient(to bottom right, $white 50%, transparent 0);
     }
   }
 }
