@@ -108,7 +108,7 @@
             <h4 class="fw-bold">Hot Oil</h4>
             <p class="text-gold"><span class="fs-4">$</span>15.00</p>
           </li>
-          <li class="col-lg-3">
+          <li class="col-3">
             <img
               src="../../public/images/straight_razor_dark-400x400.png"
               alt="straight razor"
@@ -126,6 +126,41 @@
 
     <!-- SECTION REVIEWS -->
     <section id="reviews">
+      <!-- POSITION RELATIVE SHAVING -->
+      <div class="container mb-5 position-shaving">
+        <div class="row justify-content-center">
+          <div
+            id="shaving-butter-img"
+            class="
+              col-4
+              d-flex
+              align-items-center
+              justify-content-center
+              bg-shave
+            "
+          >
+            <img
+              src="../../public/images/shaving_butter-800x800.png"
+              alt="shaving butter"
+              class="img-fluid w-75"
+            />
+          </div>
+
+          <div class="col-6 bg-shave px-5">
+            <h6 class="fw-bold mt-5 text-uppercase">
+              This month featured product
+            </h6>
+            <h2 class="fw-bold">Shaving Butter</h2>
+            <p class="mt-5">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Pellentesque laoreet enim est, vel molestie dolor ultrices ut.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <button class="mb-5 goldenrod_btn btn-general">Buy now</button>
+          </div>
+        </div>
+        <!-- CLOSE POSITION SHAVING-BUTTER -->
+      </div>
       <div class="container text-center">
         <h6 class="mt-5 fw-bold">What people say</h6>
         <h2 class="mb-5 fw-bold">Reviews</h2>
@@ -250,15 +285,34 @@ p {
 
 // SECTION REVIEWS
 #reviews {
+  .position-shaving {
+    position: relative;
+    top: -50px;
+
+    h6 {
+      font-size: 14px;
+    }
+
+    .bg-shave {
+      border-top: 3px solid $goldenrod;
+      background-color: $codGrayi;
+    }
+  }
+  #shaving-butter-img {
+    background: url(../../public/images/avadabarbers-cta-background.jpg);
+  }
+
   h2 {
     color: $silverChalice;
   }
   .row {
-    img {
-      border-radius: 50%;
-      height: 120px;
-      width: 120px;
-      margin: 15px 0;
+    .col-3 {
+      img {
+        border-radius: 50%;
+        height: 120px;
+        width: 120px;
+        margin: 15px 0;
+      }
     }
   }
 }
