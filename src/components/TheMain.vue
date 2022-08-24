@@ -203,60 +203,61 @@
           </div>
         </div>
       </div>
+
+      <!-- Blog posts -->
+      <section id="blog" class="text-center pb-5">
+        <div class="triangle-transiction"></div>
+        <h6 class="mt-5 fw-bold">Tales from the barbershop</h6>
+        <h2 class="mb-5 fw-bold">Recent Blog Posts</h2>
+        <div class="container">
+          <ul class="row justify-content-around">
+            <li class="col-3">
+              <img
+                src="../../public/images/avadabarbers-second-blog-320x202.jpg"
+                alt="second blog"
+              />
+              <div>
+                <h4 class="mt-4 fw-bold">Avada Barbers Now Open</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Phasellus ut dapibus magna. Praesent semper,
+                </p>
+              </div>
+            </li>
+            <li class="col-3">
+              <img
+                src="../../public/images/avadabarbers-choosing-blog-320x202.jpg"
+                alt="Choosing Blog"
+              />
+              <div>
+                <h4 class="mt-4 fw-bold">Choosing The Right Barber</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Phasellus ut dapibus magna. Praesent semper,
+                </p>
+              </div>
+            </li>
+            <li class="col-3">
+              <img
+                src="../../public/images/avadabarbers-ourservice-blog-320x202.jpg"
+                alt="ourservices"
+              />
+              <div>
+                <h4 class="mt-4 fw-bold">Quick Service Guide</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Phasellus ut dapibus magna. Praesent semper,
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <button class="mb-5 goldenrod_btn btn-general">
+          Read more from our blog
+        </button>
+      </section>
+      <!-- Blog posts -->
     </section>
-    <!-- Blog posts -->
-    <section id="blog" class="text-center pb-5">
-      <div class="triangle-transiction"></div>
-      <h6 class="mt-5 fw-bold">Tales from the barbershop</h6>
-      <h2 class="mb-5 fw-bold">Recent Blog Posts</h2>
-      <div class="container">
-        <ul class="row justify-content-around">
-          <li class="col-3">
-            <img
-              src="../../public/images/avadabarbers-second-blog-320x202.jpg"
-              alt="second blog"
-            />
-            <div>
-              <h4 class="mt-4 fw-bold">Avada Barbers Now Open</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus ut dapibus magna. Praesent semper,
-              </p>
-            </div>
-          </li>
-          <li class="col-3">
-            <img
-              src="../../public/images/avadabarbers-choosing-blog-320x202.jpg"
-              alt="Choosing Blog"
-            />
-            <div>
-              <h4 class="mt-4 fw-bold">Choosing The Right Barber</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus ut dapibus magna. Praesent semper,
-              </p>
-            </div>
-          </li>
-          <li class="col-3">
-            <img
-              src="../../public/images/avadabarbers-ourservice-blog-320x202.jpg"
-              alt="ourservices"
-            />
-            <div>
-              <h4 class="mt-4 fw-bold">Quick Service Guide</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus ut dapibus magna. Praesent semper,
-              </p>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <button class="mb-5 goldenrod_btn btn-general">
-        Read more from our blog
-      </button>
-    </section>
-    <!-- Blog posts -->
   </main>
   <!-- CLOSE MAIN -->
 </template>
