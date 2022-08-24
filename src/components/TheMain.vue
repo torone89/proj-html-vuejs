@@ -26,7 +26,7 @@
               alt="Men's Grooming"
             />
             <h4 class="py-5 fw-bold">Trim & Cut</h4>
-            <p class="grey-p">
+            <p>
               Avada Barbers are experts in the lickety split trim and hair cut.
               Quick but careful and ridiculously good looking.
             </p>
@@ -67,9 +67,62 @@
     <!-- Close Section Services -->
 
     <!-- SECTION PRODUCTS -->
-    <section id="products">
-      <div class="container"></div>
+    <section
+      id="products"
+      class="
+        d-flex
+        flex-column
+        justify-content-around
+        align-items-center
+        text-center
+        py-5
+      "
+    >
+      <div class="container">
+        <h6 class="text-uppercase fw-bold mt-5 text-center">
+          We have you covered
+        </h6>
+        <h2 class="mb-5 fw-bold text-center">Avada Grooming Products</h2>
+        <ul class="row maxh-400">
+          <li class="col-3">
+            <img
+              src="../../public/images/brush_dark-400x400.png"
+              alt="Dark brush"
+            />
+            <h4 class="fw-bold">Brush</h4>
+            <p class="text-gold"><span class="fs-4">$</span>15.00</p>
+          </li>
+          <li class="col-3">
+            <img
+              src="../../public/images/scissors-400x400.png"
+              alt="scissors"
+            />
+            <h4 class="fw-bold">Scissors</h4>
+            <p class="text-gold"><span class="fs-4">$</span>85.00</p>
+          </li>
+          <li class="col-3">
+            <img
+              src="../../public/images/hot_oil_dark-400x400.png"
+              alt="hot oil"
+            />
+            <h4 class="fw-bold">Hot Oil</h4>
+            <p class="text-gold"><span class="fs-4">$</span>15.00</p>
+          </li>
+          <li class="col-lg-3">
+            <img
+              src="../../public/images/straight_razor_dark-400x400.png"
+              alt="straight razor"
+            />
+            <h4 class="fw-bold">Straight Razor</h4>
+            <p class="text-gold"><span class="fs-4">$</span>30.00</p>
+          </li>
+        </ul>
+      </div>
+      <button class="mb-5 goldenrod_btn btn-general">
+        Shop our product range
+      </button>
     </section>
+
     <!-- CLOSE SECTION PRODUCTS -->
   </main>
   <!-- CLOSE MAIN -->
@@ -134,16 +187,19 @@ p {
     background-image: linear-gradient(
         to bottom right,
         transparent 50%,
-        $codGrayi 0
+        $codGray 0
       ),
-      linear-gradient(to top right, $codGrayi 50%, transparent 0);
+      linear-gradient(to top right, $codGray 50%, transparent 0);
   }
 }
 // SECTION PRODUCTS
 
 #products {
-  height: 500px;
-  background-color: $codGrayi;
-  width: 100%;
+  background: url(../../public/images/avadabarbers-reviewsbackground.jpg) top
+    center;
+
+  img {
+    height: 50%;
+  }
 }
 </style>
