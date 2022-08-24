@@ -17,8 +17,10 @@
             <div class="col">
               <b-navbar-toggle target="navbar-toggle-collapse" class="b-0">
                 <template #default="{ expanded }">
-                  <b-icon v-if="expanded" icon="list" class="fs-3"></b-icon>
-                  <b-icon v-else icon="list" class="fs-3"></b-icon>
+                  <a v-if="expanded" href="#"
+                    ><i class="fa-solid fa-xmark fs-5"></i
+                  ></a>
+                  <a v-else href="#"><i class="fa-solid fa-bars fs-4"></i></a>
                 </template>
               </b-navbar-toggle>
             </div>
