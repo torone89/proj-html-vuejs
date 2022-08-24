@@ -1,27 +1,42 @@
 <template>
   <header>
-    <div class="container">
-      <!-- Navbar -->
-      <nav class="navbar navbar-dark pt-3">
-        <div class="container-fluid">
-          <img
-            src="../../public/images/avadabarbers-logo-x1.png"
-            alt="Logo"
-            class="pointer p-0"
-          />
-          <div class="d-flex align-items-center">
-            <a href="#main-2"><i class="fas fa-shopping-cart"></i></a>
-            <button class="navbar-toggler border-0" type="button">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
-        </div>
-      </nav>
-      <!-- /Top bar -->
+    <!-- NAVBAR -->
+    <div class="container" id="section-0">
+      <div>
+        <b-navbar toggleable type="dark" variant="">
+          <b-navbar-brand href="#">
+            <img
+              src="../../public/images/avadabarbers-logo-x1.png"
+              alt="Logo"
+              class="pointer p-0"
+          /></b-navbar-brand>
+
+          <b-navbar-toggle target="navbar-toggle-collapse" class="b-0">
+            <template #default="{ expanded }">
+              <b-icon icon="cart4" class="mx-4 fs-3"></b-icon>
+              <b-icon v-if="expanded" icon="list" class="fs-3"></b-icon>
+              <b-icon v-else icon="list" class="fs-3"></b-icon>
+            </template>
+          </b-navbar-toggle>
+
+          <b-collapse id="navbar-toggle-collapse" is-nav>
+            <b-navbar-nav class="ml-auto text-center">
+              <!-- LOGICA PER GIRARE NELLE SEZIONI E STAMPO I DATI DELL'ARRAY MENUHAMBURGER -->
+              <b-nav-item
+                :href="`#section-${index}`"
+                v-for="(menu, index) in menuHamburger"
+                :key="index"
+                >{{ menu }}</b-nav-item
+              >
+            </b-navbar-nav>
+          </b-collapse>
+        </b-navbar>
+      </div>
+      <!-- ClOSE NAVBAR -->
       <!-- JUMBOTRON -->
 
       <div id="jumbotron">
-        <div class="row">
+        <div class="row" id="section-1">
           <div
             class="
               col-6
@@ -72,7 +87,7 @@
 <script>
 export default {
   name: "BaseHeader",
-  props: {},
+  props: { menuHamburger: Array },
 };
 </script>
 

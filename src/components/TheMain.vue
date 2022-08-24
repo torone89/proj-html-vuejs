@@ -7,7 +7,7 @@
     >
       <h6 class="text-uppercase mt-5 mb-4 fw-bold p-3">Award winning</h6>
       <h2 class="mb-3 fw-bold">Pro barbers</h2>
-      <button class="mb-5 goldenrod_btn btn-general mt-2">
+      <button class="mb-5 goldenrod_btn btn-general mt-2" id="section-1">
         Meet your new barber
       </button>
       <div class="triangle-transiction mt-5"></div>
@@ -78,7 +78,7 @@
         py-5
       "
     >
-      <div class="container">
+      <div class="container" id="section-3">
         <h6 class="text-uppercase fw-bold mt-5 text-center">
           We have you covered
         </h6>
@@ -127,7 +127,7 @@
     <!-- SECTION REVIEWS -->
     <section id="reviews">
       <!-- POSITION RELATIVE SHAVING -->
-      <div class="container mb-5 position-shaving">
+      <div class="container mb-5 position-shaving" id="section-4">
         <div class="row justify-content-center">
           <div
             id="shaving-butter-img"
@@ -206,7 +206,7 @@
 
       <!-- Blog posts -->
       <section id="blog" class="text-center pb-5">
-        <div class="triangle-transiction"></div>
+        <div class="triangle-transiction" id="section-5"></div>
         <h6 class="mt-5 fw-bold">Tales from the barbershop</h6>
         <h2 class="mb-5 fw-bold">Recent Blog Posts</h2>
         <div class="container">

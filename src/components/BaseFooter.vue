@@ -2,7 +2,7 @@
   <footer class="text-center">
     <!-- FOOTER TOP -->
     <div id="footer-top" class="container py-5">
-      <div class="row">
+      <div class="row" id="section-6">
         <div class="col-4">
           <img
             src="../../public/images/avadabarbers_footer_shop_image-400x312.png"

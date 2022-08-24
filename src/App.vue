@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <base-header />
+    <base-header :menuHamburger="menuHamburger" />
     <the-main />
     <base-footer :footerInfo="footerInfo" />
   </div>
@@ -23,6 +23,15 @@ export default {
   },
   data() {
     return {
+      menuHamburger: [
+        "Home",
+        "About Us",
+        "Services",
+        "Shop",
+        "Our Team",
+        "Blog",
+        "Contact Us",
+      ],
       footerInfo: {
         name: "Avada Barbers",
         address: "123 New York Street",
