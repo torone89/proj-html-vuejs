@@ -19,8 +19,8 @@
         <h6 class="text-uppercase mt-5 fw-bold text-center">Men's grooming</h6>
         <h2 class="fw-bold text-center">Services</h2>
 
-        <div class="row text-center py-5 justify-content-around">
-          <div class="col-3 mt-4">
+        <ul class="row text-center py-5 justify-content-around">
+          <li class="col-3 mt-4">
             <img
               src="../../public/images/avadabarbers-trimcut-icon-before.png"
               alt="Men's Grooming"
@@ -30,10 +30,10 @@
               Avada Barbers are experts in the lickety split trim and hair cut.
               Quick but careful and ridiculously good looking.
             </p>
-          </div>
-          <div class="col-3 mt-4">
+          </li>
+          <li class="col-3 mt-4">
             <img
-              src="../../public/images/avadabarbers-washndry-icon.png"
+              src="../../public/images/avadabarbers-beardtrim-icon.png"
               alt="Wash & Dry"
             />
             <h4 class="py-5 fw-bold">Wash & Dry</h4>
@@ -41,10 +41,10 @@
               Take a seat in our fine leather chairs, lean back and let us
               lather you a fresh head in a luxurious fashion.
             </p>
-          </div>
-          <div class="col-3 mt-4">
+          </li>
+          <li class="col-3 mt-4">
             <img
-              src="../../public/images/avadabarbers-beardtrim-icon.png"
+              src="../../public/images/avadabarbers-washndry-icon.png"
               alt="Beard Tidy"
             />
             <h4 class="py-5 fw-bold">Beard Tidy</h4>
@@ -52,8 +52,8 @@
               Tame the tangles and untidy facial hairs like a gentleman with our
               Beard Tidy services from Avada Barbers.
             </p>
-          </div>
-        </div>
+          </li>
+        </ul>
 
         <div class="d-flex align-items-center flex-column">
           <button class="mb-5 goldenrod_btn btn-general mt-2">
@@ -122,8 +122,53 @@
         Shop our product range
       </button>
     </section>
-
     <!-- CLOSE SECTION PRODUCTS -->
+
+    <!-- SECTION REVIEWS -->
+    <section id="reviews">
+      <div class="container text-center">
+        <h6 class="mt-5 fw-bold">What people say</h6>
+        <h2 class="mb-5 fw-bold">Reviews</h2>
+        <div class="row justify-content-around">
+          <div class="col-3">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+              mollis eleifend ante ut sagittis. Sed sodales, urna et imperdiet
+              placerat, ex nisi aliquam orci, ac varius odio libero et arcu.
+            </p>
+            <img
+              src="../../public/images/avadabarbers-trimcut-gallery6-200x200.jpg"
+              alt="John Doe"
+            />
+            <h6 class="text-capitalize fw-bold fst-italic">John Doe</h6>
+          </div>
+          <div class="col-3">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+              mollis eleifend ante ut sagittis. Sed sodales, urna et imperdiet
+              placerat, ex nisi aliquam orci, ac varius odio libero et arcu.
+            </p>
+            <img
+              src="../../public/images/avadabarbers-trimcut-gallery3-200x201.jpg"
+              alt="Pete Jones"
+            />
+            <h6 class="text-capitalize fw-bold fst-italic">Pete Jones</h6>
+          </div>
+          <div class="col-3">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+              mollis eleifend ante ut sagittis. Sed sodales, urna et imperdiet
+              placerat, ex nisi aliquam orci, ac varius odio libero et arcu.
+            </p>
+            <img
+              src="../../public/images/avadabarbers-trimcut-gallery7-200x201.jpg"
+              alt="Mark Wilson"
+            />
+            <h6 class="text-capitalize fw-bold fst-italic">Mark Wilson</h6>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <!-- CLOSE MAIN -->
 </template>
@@ -200,6 +245,21 @@ p {
 
   img {
     height: 50%;
+  }
+}
+
+// SECTION REVIEWS
+#reviews {
+  h2 {
+    color: $silverChalice;
+  }
+  .row {
+    img {
+      border-radius: 50%;
+      height: 120px;
+      width: 120px;
+      margin: 15px 0;
+    }
   }
 }
 </style>
