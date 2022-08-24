@@ -2,7 +2,7 @@
   <div id="app">
     <base-header />
     <the-main />
-    <base-footer />
+    <base-footer :footerInfo="footerInfo" />
   </div>
 </template>
 
@@ -20,6 +20,17 @@ export default {
     BaseHeader,
     TheMain,
     BaseFooter,
+  },
+  data() {
+    return {
+      footerInfo: {
+        name: "Avada Barbers",
+        address: "123 New York Street",
+        city: "New York City",
+        email: "info@yourwebsite.com",
+        number: "+1 (555) 555-1212",
+      },
+    };
   },
 };
 </script>

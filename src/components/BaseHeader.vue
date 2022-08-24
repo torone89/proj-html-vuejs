@@ -54,14 +54,14 @@
     <div id="buttons-fix">
       <button
         id="demos"
-        class="white_btn pointer d-block border-0 rounded-3 mb-1"
+        class="white_btn pointer d-block border-0 rounded-3 mb-1 p-2"
       >
         <i class="fas fa-3x fa-folder-plus"></i>
         <p>Demos</p>
       </button>
       <button id="sale" class="white_btn pointer border-0 rounded-3">
-        <i class="fas fa-dollar-sign"></i>
-        <span class="fs-3 fw-bold number-sale">39</span>
+        <i class="fas fa-dollar-sign pt-1"></i>
+        <span class="fs-3 fw-bold number-sale p-0">39</span>
         <p>On Sale</p>
       </button>
     </div>
@@ -106,12 +106,14 @@ header {
     .white_btn {
       width: 70px;
       height: 70px;
-      outline: none;
       color: $emperor;
     }
     #demos {
       i {
         color: $kashmirBlue;
+      }
+      p {
+        font-size: 12px;
       }
     }
     #sale {
@@ -121,7 +123,16 @@ header {
       }
       i {
         position: relative;
-        top: -10px;
+        top: -5px;
+      }
+      span {
+        position: relative;
+        top: 5px;
+      }
+      p {
+        font-size: 12px;
+        position: relative;
+        top: -2px;
       }
     }
   }
