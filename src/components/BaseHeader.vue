@@ -10,15 +10,19 @@
               alt="Logo"
               class="pointer p-0"
           /></b-navbar-brand>
-
-          <b-navbar-toggle target="navbar-toggle-collapse" class="b-0">
-            <template #default="{ expanded }">
-              <b-icon icon="cart4" class="mx-4 fs-3"></b-icon>
-              <b-icon v-if="expanded" icon="list" class="fs-3"></b-icon>
-              <b-icon v-else icon="list" class="fs-3"></b-icon>
-            </template>
-          </b-navbar-toggle>
-
+          <div class="row align-items-center">
+            <div class="col">
+              <a href="#"><i class="fas fa-shopping-cart fs-4"></i></a>
+            </div>
+            <div class="col">
+              <b-navbar-toggle target="navbar-toggle-collapse" class="b-0">
+                <template #default="{ expanded }">
+                  <b-icon v-if="expanded" icon="list" class="fs-3"></b-icon>
+                  <b-icon v-else icon="list" class="fs-3"></b-icon>
+                </template>
+              </b-navbar-toggle>
+            </div>
+          </div>
           <b-collapse id="navbar-toggle-collapse" is-nav>
             <b-navbar-nav class="ml-auto text-center">
               <!-- LOGICA PER GIRARE NELLE SEZIONI E STAMPO I DATI DELL'ARRAY MENUHAMBURGER -->
