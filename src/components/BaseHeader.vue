@@ -29,6 +29,7 @@
             <b-navbar-nav class="ml-auto text-center">
               <!-- LOGICA PER GIRARE NELLE SEZIONI E STAMPO I DATI DELL'ARRAY MENUHAMBURGER -->
               <b-nav-item
+                class="text-uppercase fs-2"
                 :href="`#section-${index}`"
                 v-for="(menu, index) in menuHamburger"
                 :key="index"

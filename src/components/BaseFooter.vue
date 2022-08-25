@@ -53,7 +53,19 @@
     </div>
     <!-- /CLOSE FOOTER TOP-->
     <!-- FOOTER BOTTOM -->
-    <div id="footer-bootom" class="container py-2"></div>
+
+    <div
+      id="footer-bottom"
+      class="d-flex justify-content-center align-items-center"
+    >
+      <p class="m-0">
+        <i class="far fa-copyright"></i> Copyright 2012 - 2020 | Avada Theme by
+        ThemeFusion | All Rights Reserved | Powered by WordPress
+      </p>
+      <!-- BOTTONE FIX PER TORNARE A INIZIO PAGINA (top) -->
+      <a href="#top"><i class="fas fa-chevron-up"></i></a>
+    </div>
+
     <!-- CLOSE FOOTER BOTTOM -->
   </footer>
 </template>
@@ -81,7 +93,7 @@ footer {
   img {
     max-width: 100%;
   }
-  // Info
+  // FOOTER TOP
   #footer-top {
     li {
       color: $emperor;
@@ -89,6 +101,28 @@ footer {
       h5 {
         color: $goldenrod;
       }
+    }
+  }
+
+  // FOOTER BOOTTOM
+  #footer-bottom {
+    height: 100px;
+    background: $footerBottom;
+    p {
+      color: $gunbsmoke;
+      opacity: 0.4;
+      font-size: 14px;
+    }
+    a {
+      bottom: 0;
+      right: 2%;
+      width: 45px;
+      height: 30x;
+      line-height: 30px;
+      position: fixed;
+
+      color: $ebb;
+      background: $mineShaft;
     }
   }
 }
