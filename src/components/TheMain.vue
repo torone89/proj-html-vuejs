@@ -165,42 +165,15 @@
         <h2 class="mb-5 fw-bold">Recent Blog Posts</h2>
         <div class="container">
           <ul class="row justify-content-around">
-            <li class="col-3">
+            <li v-for="(article, i) in blogs" :key="i" class="col-3">
               <img
-                src="../../public/images/avadabarbers-second-blog-320x202.jpg"
+                :src="require(`../../public/images/${article.url}`)"
                 alt="second blog"
               />
               <div>
-                <h4 class="mt-4 fw-bold">Avada Barbers Now Open</h4>
+                <h4 class="mt-4 fw-bold">{{ article.title }}</h4>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Phasellus ut dapibus magna. Praesent semper,
-                </p>
-              </div>
-            </li>
-            <li class="col-3">
-              <img
-                src="../../public/images/avadabarbers-choosing-blog-320x202.jpg"
-                alt="Choosing Blog"
-              />
-              <div>
-                <h4 class="mt-4 fw-bold">Choosing The Right Barber</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Phasellus ut dapibus magna. Praesent semper,
-                </p>
-              </div>
-            </li>
-            <li class="col-3">
-              <img
-                src="../../public/images/avadabarbers-ourservice-blog-320x202.jpg"
-                alt="ourservices"
-              />
-              <div>
-                <h4 class="mt-4 fw-bold">Quick Service Guide</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Phasellus ut dapibus magna. Praesent semper,
+                  {{ article.description }}
                 </p>
               </div>
             </li>
@@ -250,20 +223,41 @@ export default {
         {
           title: "Trim & Cut",
           description:
-            " Avada Barbers are experts in the lickety split trim and hair cut. Quick but careful and ridiculously good looking.",
+            "Avada Barbers are experts in the lickety split trim and hair cut. Quick but careful and ridiculously good looking.",
           url: "avadabarbers-trimcut-icon-before.png",
         },
         {
           title: "Wash & Dry",
           description:
-            " Take a seat in our fine leather chairs, lean back and let us lather you a fresh head in a luxurious fashion.",
+            "Take a seat in our fine leather chairs, lean back and let us lather you a fresh head in a luxurious fashion.",
           url: "avadabarbers-washndry-icon.png",
         },
         {
-          title: "Hot Oil",
+          title: "Quick Service Guide",
           description:
-            "  Tame the tangles and untidy facial hairs like a gentleman with our Beard Tidy services from Avada Barbers.",
+            "Tame the tangles and untidy facial hairs like a gentleman with our Beard Tidy services from Avada Barbers.",
           url: "avadabarbers-beardtrim-icon.png",
+        },
+      ],
+
+      blogs: [
+        {
+          title: "Avada Barbers Now Open",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut dapibus magna. Praesent semper,",
+          url: "avadabarbers-second-blog-320x202.jpg",
+        },
+        {
+          title: "Choosing The Right Barber",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut dapibus magna. Praesent semper,",
+          url: "avadabarbers-choosing-blog-320x202.jpg",
+        },
+        {
+          title: "Quick Service Guide",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut dapibus magna. Praesent semper,",
+          url: "avadabarbers-ourservice-blog-320x202.jpg",
         },
       ],
     };
