@@ -119,41 +119,22 @@
         <h6 class="mt-5 fw-bold">What people say</h6>
         <h2 class="mb-5 fw-bold">Reviews</h2>
         <div class="row justify-content-around">
-          <div class="col-3 round-photo">
+          <div
+            li
+            v-for="(people, i) in reviews"
+            :key="i"
+            class="col-3 round-photo"
+          >
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-              mollis eleifend ante ut sagittis. Sed sodales, urna et imperdiet
-              placerat, ex nisi aliquam orci, ac varius odio libero et arcu.
+              {{ people.description }}
             </p>
             <img
-              src="../../public/images/avadabarbers-trimcut-gallery6-200x200.jpg"
+              :src="require(`../../public/images/${people.url}`)"
               alt="John Doe"
             />
-            <h6 class="text-capitalize fw-bold fst-italic">John Doe</h6>
-          </div>
-          <div class="col-3 round-photo">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-              mollis eleifend ante ut sagittis. Sed sodales, urna et imperdiet
-              placerat, ex nisi aliquam orci, ac varius odio libero et arcu.
-            </p>
-            <img
-              src="../../public/images/avadabarbers-trimcut-gallery3-200x201.jpg"
-              alt="Pete Jones"
-            />
-            <h6 class="text-capitalize fw-bold fst-italic">Pete Jones</h6>
-          </div>
-          <div class="col-3 round-photo">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-              mollis eleifend ante ut sagittis. Sed sodales, urna et imperdiet
-              placerat, ex nisi aliquam orci, ac varius odio libero et arcu.
-            </p>
-            <img
-              src="../../public/images/avadabarbers-trimcut-gallery7-200x201.jpg"
-              alt="Mark Wilson"
-            />
-            <h6 class="text-capitalize fw-bold fst-italic">Mark Wilson</h6>
+            <h6 class="text-capitalize fw-bold fst-italic">
+              {{ people.title }}
+            </h6>
           </div>
         </div>
       </div>
@@ -258,6 +239,27 @@ export default {
           description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut dapibus magna. Praesent semper,",
           url: "avadabarbers-ourservice-blog-320x202.jpg",
+        },
+      ],
+
+      reviews: [
+        {
+          title: "John Doe",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbimollis eleifend ante ut sagittis. Sed sodales, urna et imperdiet placerat, ex nisi aliquam orci, ac varius odio libero et arcu.",
+          url: "avadabarbers-trimcut-gallery6-200x200.jpg",
+        },
+        {
+          title: "Pete Jones",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbimollis eleifend ante ut sagittis. Sed sodales, urna et imperdiet placerat, ex nisi aliquam orci, ac varius odio libero et arcu.",
+          url: "avadabarbers-trimcut-gallery3-200x201.jpg",
+        },
+        {
+          title: "Mark Wilson",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbimollis eleifend ante ut sagittis. Sed sodales, urna et imperdiet placerat, ex nisi aliquam orci, ac varius odio libero et arcu.",
+          url: "avadabarbers-trimcut-gallery7-200x201.jpg",
         },
       ],
     };
