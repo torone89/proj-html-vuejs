@@ -20,6 +20,35 @@ p {
 }
 
 
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 62px;
+    color: $starWhite;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 32px;
+    color: $driftWood;
+}
+
+h6 {
+    color: $driftWood;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+p {
+    color: $gunbsmoke;
+}
+
+
 
 // OTHER
 

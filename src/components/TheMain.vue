@@ -140,39 +140,19 @@
       </div>
 
       <!-- Blog posts -->
-      <section id="blog" class="text-center pb-5">
-        <div class="triangle-transiction" id="section-5"></div>
-        <h6 class="mt-5 fw-bold">Tales from the barbershop</h6>
-        <h2 class="mb-5 fw-bold">Recent Blog Posts</h2>
-        <div class="container">
-          <ul class="row justify-content-around">
-            <li v-for="(article, i) in blogs" :key="i" class="col-3">
-              <img
-                :src="require(`../../public/images/${article.url}`)"
-                alt="second blog"
-              />
-              <div>
-                <h4 class="mt-4 fw-bold">{{ article.title }}</h4>
-                <p>
-                  {{ article.description }}
-                </p>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <button class="mb-5 goldenrod_btn btn-general">
-          Read more from our blog
-        </button>
-      </section>
-      <!-- Blog posts -->
+      <sectionBlog />
     </section>
   </main>
   <!-- CLOSE MAIN -->
 </template>
 
 <script>
+import SectionBlog from "./SectionBlog.vue";
 export default {
   name: "TheMain",
+  components: {
+    SectionBlog,
+  },
   props: {},
   data() {
     return {
@@ -273,34 +253,6 @@ export default {
 
 // GENERAL
 
-h1 {
-  font-size: 50px;
-}
-
-h2 {
-  font-size: 62px;
-  color: $starWhite;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-h4 {
-  font-size: 32px;
-  color: $driftWood;
-}
-
-h6 {
-  color: $driftWood;
-  font-size: 14px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-
-p {
-  color: $gunbsmoke;
-}
-
 // SEZIONE MEET BARBER
 #meet-barber {
   background: $bgMeetBarber;
@@ -376,19 +328,6 @@ p {
         width: 120px;
         margin: 15px 0;
       }
-    }
-  }
-  // SECTION BLOG
-
-  #blog {
-    background: $ebb;
-    .triangle-transiction {
-      background-image: linear-gradient(to top right, transparent 50%, $white 0),
-        linear-gradient(to bottom right, $white 50%, transparent 0);
-    }
-
-    h4 {
-      font-size: 30px;
     }
   }
 }
