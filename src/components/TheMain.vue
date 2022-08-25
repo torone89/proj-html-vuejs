@@ -20,37 +20,15 @@
         <h2 class="fw-bold text-center">Services</h2>
 
         <ul class="row text-center py-5 justify-content-around">
-          <li class="col-3 mt-4">
+          <!-- LOGICA PER GIRARE Nell'OGG. Services -->
+          <li v-for="(service, i) in services" :key="i" class="col-3 mt-4">
             <img
-              src="../../public/images/avadabarbers-trimcut-icon-before.png"
+              :src="require(`../../public/images/${service.url}`)"
               alt="Men's Grooming"
             />
-            <h4 class="py-5 fw-bold">Trim & Cut</h4>
+            <h4 class="py-5 fw-bold">{{ service.title }}</h4>
             <p>
-              Avada Barbers are experts in the lickety split trim and hair cut.
-              Quick but careful and ridiculously good looking.
-            </p>
-          </li>
-          <li class="col-3 mt-4">
-            <img
-              src="../../public/images/avadabarbers-beardtrim-icon.png"
-              alt="Wash & Dry"
-            />
-            <h4 class="py-5 fw-bold">Wash & Dry</h4>
-            <p>
-              Take a seat in our fine leather chairs, lean back and let us
-              lather you a fresh head in a luxurious fashion.
-            </p>
-          </li>
-          <li class="col-3 mt-4">
-            <img
-              src="../../public/images/avadabarbers-washndry-icon.png"
-              alt="Beard Tidy"
-            />
-            <h4 class="py-5 fw-bold">Beard Tidy</h4>
-            <p>
-              Tame the tangles and untidy facial hairs like a gentleman with our
-              Beard Tidy services from Avada Barbers.
+              {{ service.description }}
             </p>
           </li>
         </ul>
@@ -257,7 +235,7 @@ export default {
           url: "scissors-400x400.png",
         },
         {
-          title: "Hot Oil",
+          title: "Beard Tidy",
           price: "15.00",
           url: "hot_oil_dark-400x400.png",
         },
@@ -265,6 +243,27 @@ export default {
           title: "Straight Razor",
           price: "30.00",
           url: "straight_razor_dark-400x400.png",
+        },
+      ],
+
+      services: [
+        {
+          title: "Trim & Cut",
+          description:
+            " Avada Barbers are experts in the lickety split trim and hair cut. Quick but careful and ridiculously good looking.",
+          url: "avadabarbers-trimcut-icon-before.png",
+        },
+        {
+          title: "Wash & Dry",
+          description:
+            " Take a seat in our fine leather chairs, lean back and let us lather you a fresh head in a luxurious fashion.",
+          url: "avadabarbers-washndry-icon.png",
+        },
+        {
+          title: "Hot Oil",
+          description:
+            "  Tame the tangles and untidy facial hairs like a gentleman with our Beard Tidy services from Avada Barbers.",
+          url: "avadabarbers-beardtrim-icon.png",
         },
       ],
     };
