@@ -274,8 +274,13 @@ export default {
 @import "@/assets/sass/style.scss";
 
 // GENERAL
+
+h1 {
+  font-size: 50px;
+}
+
 h2 {
-  font-size: 80px;
+  font-size: 62px;
   color: $starWhite;
   text-transform: uppercase;
   font-weight: 700;
@@ -339,6 +344,9 @@ p {
   img {
     height: 50%;
   }
+  h2 {
+    font-size: 50px;
+  }
 }
 
 // SECTION REVIEWS
@@ -380,6 +388,10 @@ p {
     .triangle-transiction {
       background-image: linear-gradient(to top right, transparent 50%, $white 0),
         linear-gradient(to bottom right, $white 50%, transparent 0);
+    }
+
+    h4 {
+      font-size: 30px;
     }
   }
 }
