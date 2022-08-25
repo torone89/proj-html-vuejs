@@ -305,7 +305,7 @@ p {
 
 // SEZIONE MEET BARBER
 #meet-barber {
-  background: url(../../public/images/avadabarbers-about-introbackground.jpg);
+  background: $bgMeetBarber;
   .triangle-transiction {
     background-image: linear-gradient(
         to bottom right,
@@ -338,8 +338,7 @@ p {
 // SECTION PRODUCTS
 
 #products {
-  background: url(../../public/images/avadabarbers-reviewsbackground.jpg) top
-    center;
+  background: $bgProdutcts top center;
 
   img {
     height: 50%;
@@ -365,7 +364,7 @@ p {
     }
   }
   #shaving-butter-img {
-    background: url(../../public/images/avadabarbers-cta-background.jpg);
+    background: $bgShavingButter;
   }
 
   h2 {
