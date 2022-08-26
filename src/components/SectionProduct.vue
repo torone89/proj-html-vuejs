@@ -17,12 +17,16 @@
       <h2 class="mb-5 fw-bold text-center">Avada Grooming Products</h2>
       <ul class="row maxh-400">
         <li v-for="(shop, i) in products" :key="i" class="col-3">
-          <img
-            :src="require(`../../public/images/${shop.url}`)"
-            alt="Dark brush"
-          />
-          <h4 class="fw-bold">{{ shop.title }}</h4>
-          <p class="text-gold"><span class="fs-4">$</span>{{ shop.price }}</p>
+          <a href="#">
+            <img
+              :src="require(`../../public/images/${shop.url}`)"
+              alt="Dark brush"
+            />
+            <h4 class="fw-bold">{{ shop.title }}</h4>
+            <p class="text-gold">
+              <span class="fs-4">$</span>{{ shop.price }}
+            </p></a
+          >
         </li>
       </ul>
     </div>
@@ -75,7 +79,11 @@ export default {
 
   img {
     height: 50%;
+    &:hover {
+      transform: translatey(-10px) scale(1);
+    }
   }
+
   h2 {
     font-size: 50px;
   }
